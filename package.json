@@ -1,0 +1,27 @@
+{
+  "name": "@pipeworx/mcp-biotech-news",
+  "version": "0.1.0",
+  "description": "Biotech News MCP — aggregated biotech & pharma industry news: FDA approvals, clinical readouts, M&A, funding, from the major trade publications.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-biotech-news": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "biotech-news"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-biotech-news.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
