@@ -1,0 +1,35 @@
+[
+  {
+    "name": "biotech_news",
+    "description": "Latest biotech and pharmaceutical industry news headlines: FDA drug approvals and rejections, clinical trial results and data readouts, biotech M&A and licensing deals, venture funding rounds, layoffs and restructurings. Aggregates Fierce Biotech, Endpoints News, BioPharma Dive, STAT biotech, Fierce Pharma and GEN in one call, merged newest-first. Filter by keyword (e.g. \"approval\", a drug or company name) and a trailing day window.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword filter over title/summary, e.g. \"FDA approval\", \"obesity\", a company name."
+        },
+        "days": {
+          "type": "number",
+          "description": "Only items published in the last N days (default 7)."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max items (1-50, default 25)."
+        },
+        "source": {
+          "type": "string",
+          "description": "Restrict to one source id (from biotech_news_sources), e.g. \"endpoints\"."
+        }
+      }
+    }
+  },
+  {
+    "name": "biotech_news_sources",
+    "description": "List the biotech & pharma news publications aggregated by biotech_news (id, title, source site, focus). Pass an id as `source` to biotech_news to read one publication.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
