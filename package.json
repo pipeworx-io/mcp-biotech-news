@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-biotech-news",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Biotech News MCP — aggregated biotech & pharma industry news: FDA approvals, clinical readouts, M&A, funding, from the major trade publications.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "biotech-news",
     "gatewaySlug": "biotech-news",
-    "sourceHash": "v1-6d882fd4a887cb818dadfd1e9fab1b4ceda680d252f3d97662b5480d52060f12",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-da629a9021064cd4efeb81e5a14ed897d034ca4ebac134d8d2f4be151fa08c8e",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
